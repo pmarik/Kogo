@@ -1,0 +1,30 @@
+header {
+    padding: 0 50px;
+    background: transparent;
+    position: fixed;
+    width: 100%;
+  
+
+    nav{
+        min-height: 100px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: white;
+
+        ul{
+            min-width: 400px;
+            display: flex;
+            justify-content: space-around;
+        }
+    }
+    
+
+    #header-logo{
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%);
+        top: 10px;
+    }
+}
+
