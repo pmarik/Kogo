@@ -1,0 +1,18 @@
+html, body {
+    height: 100vh;
+    overflow: hidden;
+  }
+
+body{
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+}
+
+.upper-home,
+.lower-home{
+    height: 100vh;
+    scroll-snap-align: start;
+
+}
+
+ 

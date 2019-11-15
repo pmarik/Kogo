@@ -1,16 +1,68 @@
 .first-top-half-home{
     height: 70vh;
+    padding-top: 4%;
     border-bottom: 8px solid _palette(border);
     background: linear-gradient(156deg, rgba(250,250,250,1) 0%, rgba(233,168,18,1) 0%, rgba(233,168,18,1) 19%, rgba(239,196,97,1) 85%, rgba(241,207,129,1) 100%, rgba(250,250,250,1) 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .first-bottom-half-home{
     background: _palette(fg);
     height: 30vh;
+    padding-top: 2%;
+
+    .home-second-half-btn{
+        position: relative;
+        left: 25%;
+        transform: translate(-50%);
+    }
+
+    .bottom-half-home-text{
+        background: yellow;
+        width: 50%;
+    }
+}
+
+
+#second-top-half-home{
+
+    .inner{
+        height: 60vh;
+        padding-top: 4%;
+
+        div{
+            background: yellow;
+            width: 50%;
+        }
+    }
+}
+
+.second-bottom-half-home{
+    background: linear-gradient(31deg, rgba(250,250,250,1) 0%, rgba(233,168,18,1) 0%, rgba(233,168,18,1) 19%, rgba(239,196,97,1) 85%, rgba(241,207,129,1) 100%, rgba(250,250,250,1) 100%);
+
+    height: 40vh;
+    .inner{
+        height: 100%;
+        display: inline-block;
+        padding-top: 4%;
+      
+        h2{
+            text-align: center;
+        }
+        
+    }
 }
 
 .inner{
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    #hero-img{
+        margin-right: 10%;
+    }
+    
 }
