@@ -24,8 +24,10 @@ $size: (
 
 // Font.
 $font: (
-    family:				(Arial, Helvetica, sans-serif),
-    family-fixed:		('Courier New', monospace),
+    family:             ('Montserrat', sans-serif),
+    // family:				(Arial, Helvetica, sans-serif),
+    family-fixed:        ('Montserrat', sans-serif),
+    // family-fixed:		('Courier New', monospace),
     weight:				normal,
     weight-bold:		bold,
     kerning-alt:		0.25em
@@ -35,15 +37,17 @@ $font: (
 $palette: (
     bg:					#fff, 
     fg:					#fff,
+    p-light:            #fff,
+    p-dark:             #000,
     fg-bold:			#674B42,
-    btn-color:          #49403D,
-    btn-hover:          #615d5c,
+    btn-color:          #674B42,
+    btn-hover:          #a04c4c,
     fg-light:			#5c0808,
     border:				#728C5B,
     border-bg:			#3f3d3a,
     accent1:			#DFD8C8,
     accent2:			#fAfAfA,
-    accent3:		    #AF9D61,
+    accent3:		    #674b42,
 );
 
 // #af9d61 and #a2956a cool gold color abd #cabcaa

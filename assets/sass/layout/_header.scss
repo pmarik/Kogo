@@ -1,8 +1,9 @@
 header {
     padding: 0 50px;
-    background: transparent;
+    // background: transparent;
     position: fixed;
     width: 100%;
+    z-index: 1000;
   
 
     nav{
@@ -10,12 +11,19 @@ header {
         display: flex;
         justify-content: space-between;
         align-items: center;
+        // mix-blend-mode: difference;
         color: white;
+
+        a{
+            border-bottom: none;
+        }
  
         ul{
             min-width: 400px;
             display: flex;
             justify-content: space-around;
+
+           
         }
     }
     

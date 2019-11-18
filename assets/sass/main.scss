@@ -3,7 +3,8 @@
 @import 'libs/mixins';
 @import 'libs/vendor';
 @import 'libs/breakpoints';
-
+@import 'libs/animations';
+ 
 
 // Breakpoints 
 @include breakpoints((
@@ -29,4 +30,4 @@
 @import 'layout/header'; 
 @import 'layout/wrapper';
 @import 'layout/home';
-@import 'layout/scrollBehavior'; 
+@import 'layout/footer';

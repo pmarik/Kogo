@@ -1,0 +1,21 @@
+footer{
+    border-top: 8px solid _palette(border);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 120px;
+    padding: 0 50px;
+   
+
+    ul{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 50%;
+        background: yellow;
+
+        a{
+            border-bottom: 1px solid _palette(btn-color);
+        }
+    }
+}

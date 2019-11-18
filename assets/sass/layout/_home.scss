@@ -1,3 +1,5 @@
+
+
 .first-top-half-home{
     height: 70vh;
     padding-top: 4%;
@@ -6,7 +8,16 @@
     display: flex;
     align-items: center;
     justify-content: center;
+
+    #hero-info{
+        opacity: 0;
+
+        a{
+            border-bottom: 1px solid _palette(accent3);
+        }
+    }
 }
+
 
 .first-bottom-half-home{
     background: _palette(fg);
@@ -15,8 +26,9 @@
 
     .home-second-half-btn{
         position: relative;
-        left: 25%;
+        left: 28%;
         transform: translate(-50%);
+        
     }
 
     .bottom-half-home-text{
@@ -27,6 +39,8 @@
 
 
 #second-top-half-home{
+    border-bottom: 8px solid _palette(border);
+
 
     .inner{
         height: 60vh;
@@ -35,18 +49,29 @@
         div{
             background: yellow;
             width: 50%;
+
+            button{
+                margin-top: 2rem;
+            }
         }
     }
 }
 
 .second-bottom-half-home{
     background: linear-gradient(31deg, rgba(250,250,250,1) 0%, rgba(233,168,18,1) 0%, rgba(233,168,18,1) 19%, rgba(239,196,97,1) 85%, rgba(241,207,129,1) 100%, rgba(250,250,250,1) 100%);
-
-    height: 40vh;
+    padding-bottom: 5%;
+    min-height: 60vh;
     .inner{
         height: 100%;
         display: inline-block;
-        padding-top: 4%;
+        padding-top: 5%;
+        
+
+        button{
+            margin-top: 2rem;
+            position: relative;
+           
+        }
       
         h2{
             text-align: center;
