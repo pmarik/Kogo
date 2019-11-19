@@ -4,7 +4,10 @@ header {
     position: fixed;
     width: 100%;
     z-index: 1000;
-  
+
+    @include breakpoint('<=small'){
+        padding: 0 10px;
+    }
 
     nav{
         min-height: 100px;
@@ -14,6 +17,13 @@ header {
         // mix-blend-mode: difference;
         color: white;
 
+        svg{
+            height: 25px;
+            position: relative;
+            top: 5px;
+            margin-right: 0.5rem;
+        }
+
         a{
             border-bottom: none;
         }
@@ -22,7 +32,19 @@ header {
             min-width: 400px;
             display: flex;
             justify-content: space-around;
-
+            
+            li{
+                position: relative;
+                .active::after{
+                    content: '▲';
+                    font-size: 0.6rem;
+                    display: inline-block;
+                    position: absolute;
+                    left: 50%;
+                    top: 80%;
+                    transform: translate(-50%);
+                }
+            }
            
         }
     }

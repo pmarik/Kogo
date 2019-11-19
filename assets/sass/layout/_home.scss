@@ -1,7 +1,8 @@
 
 
 .first-top-half-home{
-    height: 70vh;
+    min-height: 100vh;
+    //min-height: 360px;
     padding-top: 4%;
     border-bottom: 8px solid _palette(border);
     background: linear-gradient(156deg, rgba(250,250,250,1) 0%, rgba(233,168,18,1) 0%, rgba(233,168,18,1) 19%, rgba(239,196,97,1) 85%, rgba(241,207,129,1) 100%, rgba(250,250,250,1) 100%);
@@ -9,31 +10,111 @@
     align-items: center;
     justify-content: center;
 
-    #hero-info{
-        opacity: 0;
+    @include breakpoint('<=medium'){
+        padding-top: 100px;
+    }
+    
+    
+    .inner{
+        flex-wrap: wrap;
+        
 
-        a{
-            border-bottom: 1px solid _palette(accent3);
+        #hero-info{
+            @include breakpoint('<=medium'){
+                margin-top: 10%;
+                width: 70%;
+            }
+
+            @include breakpoint('<=small'){
+                width: 90%;
+            }
+            opacity: 0;
+            a{
+                border-bottom: 1px solid _palette(accent3);
+            }
+        }
+
+        #hero-img{
+            display: flex; 
+            justify-content: center;
+            align-items: center;
+            width: 30%;
+
+            @include breakpoint('>=medium'){
+                margin-right: 10%;
+                margin-left: 5%;
+            }
+
+            @include breakpoint('>small'){
+                margin-right: 5%;
+            }
+
+            @include breakpoint('<=medium'){
+                width: 90%;
+                margin-top: 10%;
+                margin-bottom: 10%;
+            }
+            img{
+                
+                width: 100%;
+                @include breakpoint('<=medium'){
+                    width: 70%;
+                    
+                }
+                
+                @include breakpoint('<=small'){
+                    width: 80%;
+                    margin-left: 10%;
+                    
+                   
+                }
+            }
         }
     }
+
+  
 }
 
 
 .first-bottom-half-home{
     background: _palette(fg);
-    height: 30vh;
-    padding-top: 2%;
-
-    .home-second-half-btn{
-        position: relative;
-        left: 28%;
-        transform: translate(-50%);
-        
+    //height: 30vh;
+    min-height: 300px;
+    max-height: 500px;
+    display: flex;
+    flex-wrap: wrap;
+    
+    .inner{
+        flex-wrap: wrap;
+        @include breakpoint('<=medium'){
+            flex-direction: column-reverse;
+            justify-content: space-around;
+        }
     }
 
-    .bottom-half-home-text{
-        background: yellow;
+    .bottom-half-home-action{
         width: 50%;
+        .home-second-half-btn{
+            position: relative;
+            left: 50%;
+            transform: translate(-50%);
+    
+        }
+    }
+    
+
+  
+
+    .bottom-half-home-text{
+        width: 50%;
+        @include breakpoint('<=medium'){
+            width: 80%;
+        }
+        @include breakpoint('<=small'){
+            width: 95%;
+            margin-top: 10%;
+            margin-bottom: 5%;
+        }
     }
 }
 
@@ -46,11 +127,17 @@
         height: 60vh;
         padding-top: 4%;
 
-        div{
-            background: yellow;
+        div{   
             width: 50%;
 
-            button{
+            @include breakpoint('<=medium'){
+                width: 70%;
+            }
+
+            @include breakpoint('<=small'){
+                width: 85%;
+            }
+            .btn{
                 margin-top: 2rem;
             }
         }
@@ -61,16 +148,17 @@
     background: linear-gradient(31deg, rgba(250,250,250,1) 0%, rgba(233,168,18,1) 0%, rgba(233,168,18,1) 19%, rgba(239,196,97,1) 85%, rgba(241,207,129,1) 100%, rgba(250,250,250,1) 100%);
     padding-bottom: 5%;
     min-height: 60vh;
+
     .inner{
         height: 100%;
         display: inline-block;
         padding-top: 5%;
         
 
-        button{
+        .btn{
             margin-top: 2rem;
             position: relative;
-           
+           float: right;
         }
       
         h2{
@@ -84,10 +172,5 @@
     width: 100%;
     display: flex;
     justify-content: space-between;
-    align-items: center;
-
-    #hero-img{
-        margin-right: 10%;
-    }
-    
+    align-items: center;   
 }

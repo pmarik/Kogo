@@ -1,30 +1,13 @@
-// button {
-//     background: _palette(btn-color);
-//     transition: 500ms ease-in-out;
-
-//     color: _palette(fg);
-//     border: none;
-    
-//     width: 12em;
-//     height: 4em;
-
-//     &:hover{
-//         background: _palette(btn-hover);
-//         transition: 300ms ease-in-out;
-//         cursor: pointer;
-//     }
-// }
- 
 .btn{
     background: _palette(btn-color);
-    transition: 500ms ease-in-out;
+    transition: 300ms ease-in-out;
     color: _palette(fg);
-    border: none;
-    text-align: center;
-    
+    border: none; 
+    text-align: center; 
+    display: inline-block;
     line-height: 60px;
-    width: 180px;
     height: 60px;
+    width: 180px;
     font-size: 0.9rem;
     font-weight: bold;
 
