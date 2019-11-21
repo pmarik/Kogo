@@ -42,59 +42,6 @@
   -webkit-animation-timing-function: ease-out;
   animation-timing-function: ease-out; }
 
-.path {
-  stroke-dasharray: 10000;
-  stroke-dashoffset: 10000;
-  -webkit-animation: dash 5s ease-out;
-  animation: dash 5s ease-out;
-  -webkit-animation-fill-mode: forwards;
-  animation-fill-mode: forwards;
-  -webkit-animation-delay: 1.5s;
-  animation-delay: 1.5s; }
-
-@-webkit-keyframes dash {
-  from {
-    stroke-dashoffset: 10000; }
-  to {
-    stroke-dashoffset: 0; } }
-
-@keyframes dash {
-  from {
-    stroke-dashoffset: 10000; }
-  to {
-    stroke-dashoffset: 0; } }
-
-.svgtest {
-  width: 300px;
-  height: auto; }
-
-.blog {
-  background: grey; }
-
-.svgClassPath {
-  width: auto;
-  height: 200px;
-  background: yellow; }
-
-.svgContain {
-  width: 500px;
-  height: auto;
-  background: yellow; }
-
-.theOverlay {
-  stroke-dasharray: 650;
-  stroke-dashoffset: 650;
-  -webkit-animation: draw 2s linear infinite alternate;
-  animation: draw 2s linear infinite alternate; }
-
-@-webkit-keyframes draw {
-  to {
-    stroke-dashoffset: 0; } }
-
-@keyframes draw {
-  to {
-    stroke-dashoffset: 0; } }
-
 html, body, div, span, applet, object,
 iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
 pre, a, abbr, acronym, address, big, cite,
@@ -368,6 +315,41 @@ hr {
     -o-transition: 300ms ease-in-out;
     transition: 300ms ease-in-out;
     color: #fff; }
+
+.blog {
+  background: #c9c7c7; }
+
+.svgContain {
+  width: 600px;
+  height: auto;
+  background: transparent; }
+
+#stem1 {
+  position: absolute; }
+
+.theOverlay {
+  stroke-dasharray: 850;
+  stroke-dashoffset: 850;
+  -webkit-animation: draw 3s ease-in infinite;
+  animation: draw 3s ease-in infinite; }
+
+.theOverlay1 {
+  stroke-dasharray: 850;
+  stroke-dashoffset: 850;
+  -webkit-animation: draw 4s ease-in;
+  animation: draw 4s ease-in;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards; }
+
+@-webkit-keyframes draw {
+  to {
+    stroke-dashoffset: 0;
+    color: #00da00; } }
+
+@keyframes draw {
+  to {
+    stroke-dashoffset: 0;
+    color: #00da00; } }
 
 header {
   padding: 0 50px;

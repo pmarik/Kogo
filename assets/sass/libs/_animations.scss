@@ -26,60 +26,8 @@
 }
 
 
-.path {
-    stroke-dasharray: 10000;
-    stroke-dashoffset: 10000;
-    animation: dash 5s ease-out;
-    animation-fill-mode: forwards;
-    animation-delay: 1.5s;
-  }
-  
-  @keyframes dash {
-    from { 
-      stroke-dashoffset: 10000;
-    }
-    to {
-      stroke-dashoffset: 0;
-    }
-  }
-
-  .svgtest{
-      width: 300px;
-      height: auto;
-  }
  
 
-  .blog{
-    background: grey;
-  }
-
-  
-
-  .svgClassPath{
-    width: auto;
-    height: 200px;
-    background: yellow;
-  }
-
-
-
-  .svgContain{
-    width: 500px;
-    height: auto;
-    background: yellow;
-  }
-
-  .theOverlay {
-    stroke-dasharray: 650;
-    stroke-dashoffset: 650;
-    animation: draw 2s linear infinite alternate;
-  }
-  
-  @keyframes draw {
-    to {
-      stroke-dashoffset: 0;
-    }
-  }
 
 
   
