@@ -6,16 +6,24 @@
     width: 600px;
     height: auto;
     background: transparent;
+    visibility: hidden;
+  } 
+ 
+  #stem1, #stem2{
+    position: absolute;
   }
 
-  #stem1{
-    position: absolute;
-    
+  #stem2{
+    margin-left: calc(100vw - 800px);
+
+    .svgContain{
+      width: 800px; 
+    }
   }
  
   .theOverlay {
     stroke-dasharray: 850;
-    stroke-dashoffset: 850;
+    stroke-dashoffset: 850; 
     animation: draw 3s ease-in infinite;
   }
 
@@ -26,11 +34,21 @@
     animation-fill-mode: forwards;
   }
 
+  .theOverlay2 {
+    stroke-dasharray: 150;
+    stroke-dashoffset: -100; 
+    animation: draw 1.5s ease-out;
+    animation-fill-mode: forwards;
+  } 
+  
 
   
-  @keyframes draw {
+  @keyframes draw { 
     to {
       stroke-dashoffset: 0;
-      color: #00da00;
+      color: #728C5B;
     }
   }
+
+  
+ 
