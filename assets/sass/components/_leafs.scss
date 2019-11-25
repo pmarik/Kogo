@@ -1,0 +1,24 @@
+.leaf1_1{
+    width: 70px; 
+    height: auto; 
+    position: absolute; 
+    right: 180px;
+    top: 85px;
+    visibility: hidden;
+    transform-origin: left;
+    animation: leafgrow 500ms;
+    animation-fill-mode: forwards;
+    animation-delay: 1.6s;
+}
+
+@keyframes leafgrow{
+    0%{
+        transform: scalex(0);
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+        visibility: visible;
+        transform: scalex(1);
+    } 
+}  

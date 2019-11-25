@@ -365,6 +365,45 @@ hr {
     stroke-dashoffset: 0;
     color: #728C5B; } }
 
+.leaf1_1 {
+  width: 70px;
+  height: auto;
+  position: absolute;
+  right: 180px;
+  top: 85px;
+  visibility: hidden;
+  -webkit-transform-origin: left;
+  -ms-transform-origin: left;
+  transform-origin: left;
+  -webkit-animation: leafgrow 500ms;
+  animation: leafgrow 500ms;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-delay: 1.6s;
+  animation-delay: 1.6s; }
+
+@-webkit-keyframes leafgrow {
+  0% {
+    -webkit-transform: scalex(0);
+    transform: scalex(0);
+    opacity: 0; }
+  100% {
+    opacity: 1;
+    visibility: visible;
+    -webkit-transform: scalex(1);
+    transform: scalex(1); } }
+
+@keyframes leafgrow {
+  0% {
+    -webkit-transform: scalex(0);
+    transform: scalex(0);
+    opacity: 0; }
+  100% {
+    opacity: 1;
+    visibility: visible;
+    -webkit-transform: scalex(1);
+    transform: scalex(1); } }
+
 header {
   padding: 0 50px;
   position: fixed;
