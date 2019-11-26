@@ -2,13 +2,7 @@
 require('intersection-observer');
 
 function init(){
-
-    // window.setTimeout(() => {
-    //     document.getElementById('vine2').classList.add('theOverlay2');
-    //     document.getElementsByClassName('svgContain')[1].setAttribute("style", "visibility: visible;");
-    // }, 2000);
-
-
+  
     let thresholdNum = 0.8
     const options = {
         root: null,
@@ -47,6 +41,13 @@ document.addEventListener("DOMContentLoaded", function(){
         //Add class to animate SVG, initial start state is hidden until content loaded
         document.getElementById('vine1').classList.add('theOverlay1');
         document.getElementsByClassName('svgContain')[0].setAttribute("style", "visibility: visible;");
+
+        //top stem leaf animations
+        let leafList = document.getElementsByClassName('stem1_leaf');
+
+        for(let i = 0; i < leafList.length; i++){
+          leafList[i].classList.add(`leaf1_${i+1}`)
+        };
 
 
     }, 200);

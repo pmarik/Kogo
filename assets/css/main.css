@@ -308,7 +308,8 @@ hr {
   height: 60px;
   width: 180px;
   font-size: 0.9rem;
-  font-weight: bold; }
+  font-weight: bold;
+  z-index: 100; }
   .btn:hover {
     background: #a04c4c;
     -webkit-transition: 300ms ease-in-out;
@@ -318,6 +319,9 @@ hr {
 
 .blog {
   background: #c9c7c7; }
+
+.drawing {
+  overflow: hidden; }
 
 .svgContain {
   width: 600px;
@@ -365,13 +369,15 @@ hr {
     stroke-dashoffset: 0;
     color: #728C5B; } }
 
-.leaf1_1 {
-  width: 70px;
+.stem1_leaf {
+  visibility: hidden; }
+
+.leaf1_1, .leaf1_2, .leaf1_3, .leaf1_4, .leaf1_5, .leaf1_6, .leaf1_7, .leaf1_8 {
+  width: 85px;
   height: auto;
   position: absolute;
-  right: 180px;
-  top: 85px;
-  visibility: hidden;
+  right: 498px;
+  top: -10px;
   -webkit-transform-origin: left;
   -ms-transform-origin: left;
   transform-origin: left;
@@ -379,14 +385,63 @@ hr {
   animation: leafgrow 500ms;
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
-  -webkit-animation-delay: 1.6s;
-  animation-delay: 1.6s; }
+  -webkit-animation-delay: 800ms;
+  animation-delay: 800ms;
+  z-index: 1; }
+
+.leaf1_2 {
+  width: 140px;
+  right: 350px;
+  top: 130px;
+  -webkit-animation-delay: 900ms;
+  animation-delay: 900ms; }
+
+.leaf1_3 {
+  right: 370px;
+  top: -15px;
+  -webkit-animation-delay: 1000ms;
+  animation-delay: 1000ms; }
+
+.leaf1_4 {
+  width: 115px;
+  top: 111px;
+  right: 265px;
+  -webkit-animation-delay: 1150ms;
+  animation-delay: 1150ms; }
+
+.leaf1_5 {
+  width: 100px;
+  top: 27px;
+  left: 278px;
+  -webkit-animation-delay: 1300ms;
+  animation-delay: 1300ms; }
+
+.leaf1_6 {
+  width: 95px;
+  top: 82px;
+  right: 155px;
+  -webkit-animation-delay: 1400ms;
+  animation-delay: 1400ms; }
+
+.leaf1_7 {
+  width: 50px;
+  right: 155px;
+  top: -52px;
+  -webkit-animation-delay: 1580ms;
+  animation-delay: 1580ms; }
+
+.leaf1_8 {
+  top: 7px;
+  right: 42px;
+  -webkit-animation-delay: 1800ms;
+  animation-delay: 1800ms; }
 
 @-webkit-keyframes leafgrow {
   0% {
     -webkit-transform: scalex(0);
     transform: scalex(0);
-    opacity: 0; }
+    opacity: 0;
+    visibility: hidden; }
   100% {
     opacity: 1;
     visibility: visible;
@@ -397,7 +452,8 @@ hr {
   0% {
     -webkit-transform: scalex(0);
     transform: scalex(0);
-    opacity: 0; }
+    opacity: 0;
+    visibility: hidden; }
   100% {
     opacity: 1;
     visibility: visible;
