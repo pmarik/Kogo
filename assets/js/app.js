@@ -12,12 +12,22 @@ function init(){
 
     let stem2 = document.getElementById('stem2');
     
-
+    console.log("about to observe");
     let callback = function(entries, observer) {
         entries.forEach(entry => {
+          console.log("about to intersect");
           if(entry.intersectionRatio > thresholdNum){
+
+            console.log("intersecting");
             document.getElementById('vine2').classList.add('theOverlay2');
             document.getElementsByClassName('svgContain')[1].setAttribute("style", "visibility: visible;");
+
+            //Second home stem leaf animations
+            let leafList2 = document.getElementsByClassName('stem2_leaf');
+
+            for(let i = 0; i < leafList2.length; i++){
+              leafList2[i].classList.add(`leaf2_${i+1}`)
+            };
 
             observer.unobserve(stem2);
           }
@@ -42,7 +52,7 @@ document.addEventListener("DOMContentLoaded", function(){
         document.getElementById('vine1').classList.add('theOverlay1');
         document.getElementsByClassName('svgContain')[0].setAttribute("style", "visibility: visible;");
 
-        //top stem leaf animations
+        //First home stem leaf animations
         let leafList = document.getElementsByClassName('stem1_leaf');
 
         for(let i = 0; i < leafList.length; i++){
