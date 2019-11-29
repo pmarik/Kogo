@@ -1,12 +1,11 @@
 .wrapper{
     padding: 0 12%;
-
     @include breakpoint('<=medium'){
         padding: 0 8%;
     }
 
     @include breakpoint('<small'){
         padding: 0 2%;
-    }
+    } 
 } 
 
