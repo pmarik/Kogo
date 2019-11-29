@@ -4,7 +4,7 @@
     min-height: 100vh;
     //min-height: 360px;
     padding-top: 4%;
-    border-bottom: 8px solid _palette(border);
+    border-bottom: 5px solid _palette(border);
     background: linear-gradient(156deg, rgba(250,250,250,1) 0%, rgba(233,168,18,1) 0%, rgba(233,168,18,1) 19%, rgba(239,196,97,1) 85%, rgba(241,207,129,1) 100%, rgba(250,250,250,1) 100%);
     display: flex;
     align-items: center;
@@ -18,7 +18,6 @@
     
     .inner{
         flex-wrap: wrap;
-        
 
         #hero-info{
             @include breakpoint('<=medium'){
@@ -39,7 +38,7 @@
             display: flex; 
             justify-content: center;
             align-items: center;
-            width: 30%;
+            width: 40%;
 
             @include breakpoint('>=medium'){
                 margin-right: 10%;
@@ -54,6 +53,7 @@
                 width: 90%;
                 margin-top: 10%;
                 margin-bottom: 10%;
+
             }
             img{
                 
@@ -84,7 +84,7 @@
     max-height: 500px;
     display: flex;
     flex-wrap: wrap;
-    
+  
     .inner{
         flex-wrap: wrap;
         @include breakpoint('<=medium'){
@@ -97,8 +97,12 @@
         width: 50%;
         .home-second-half-btn{
             position: relative;
-            left: 50%;
+            left: 62%;
             transform: translate(-50%);
+
+            @include breakpoint('<=small'){
+                left: 50%;
+            }
     
         }
     }
@@ -107,6 +111,7 @@
   
 
     .bottom-half-home-text{
+        z-index: 10001;
         width: 50%;
         @include breakpoint('<=medium'){
             width: 80%;
@@ -121,7 +126,7 @@
 
 
 #second-top-half-home{
-    border-bottom: 8px solid _palette(border);
+    border-bottom: 5px solid _palette(border);
 
 
     .inner{
@@ -130,6 +135,7 @@
 
         div{   
             width: 50%;
+            z-index: 100001;
 
             @include breakpoint('<=medium'){
                 width: 70%;

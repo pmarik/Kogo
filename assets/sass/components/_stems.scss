@@ -2,8 +2,26 @@
     background: rgb(201, 199, 199);
   }
 
-.drawing{
-  overflow: hidden;
+.drawing1{
+  //overflow: hidden;
+  @include breakpoint('<=medium'){
+    transform: scale(0.8) translate(-30%);
+    opacity: 0.2;
+  }
+  @include breakpoint('<=small'){
+    transform: scale(0.4) translate(-80%);
+  }
+}
+
+.drawing2{
+  @include breakpoint('<=medium'){
+    transform: scale(0.8) translate(30%);
+    opacity: 0.2;
+  }
+
+  @include breakpoint('<=small'){
+    transform: scale(0.4) translate(80%);
+  }
 }
 
   .svgContain{

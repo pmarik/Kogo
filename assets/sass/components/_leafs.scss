@@ -123,7 +123,7 @@
     
 ******************/
 
-.leaf2_1, .leaf2_2, .leaf2_3, .leaf2_4, .leaf2_5, .leaf2_6{
+.leaf2_1, .leaf2_2, .leaf2_3, .leaf2_4, .leaf2_5, .leaf2_6, .leaf2_7, .leaf2_8, .leaf2_9, .leaf2_10, .leaf2_11{
     width: 125px;  
     height: auto; 
     position: absolute; 
@@ -138,7 +138,7 @@
     display: inline-block;
 }
 
-.leaf2_2, .leaf2_4, .leaf2_5{
+.leaf2_2, .leaf2_4, .leaf2_5, .leaf2_7, .leaf2_8, .leaf2_10, .leaf2_11{
     width: 185px;
     bottom: -20px;
     right: 135px;
@@ -176,6 +176,40 @@
     bottom: 230px;
     right: 355px;
     animation-delay: 550ms;
+}
+
+.leaf2_7{
+    width: 180px;
+    bottom: 200px;
+    right: 460px;
+    animation-delay: 650ms;
+}
+
+.leaf2_8{
+    width: 170px;
+    bottom: 280px;
+    right: 525px;
+    animation-delay: 750ms;
+}
+
+.leaf2_9{
+    width: 70px;
+    bottom: 370px;
+    right: 515px;
+    animation-delay: 850ms; 
+}
+.leaf2_10{
+    width: 120px;
+    bottom: 330px;
+    right: 620px;
+    animation-delay: 975ms;
+}
+
+.leaf2_11{
+    width: 100px;
+    bottom: 420px;
+    right: 720px;
+    animation-delay: 1075ms;
 }
 
 @keyframes leafgrow2{  

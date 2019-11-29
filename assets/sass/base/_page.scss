@@ -20,6 +20,10 @@
         }
     }
 
+    html, body{
+        height: 100%;
+    }
+
 // Set box model to border-box.
 // Based on css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice
     html {
@@ -32,7 +36,10 @@
         box-sizing: inherit;
     }
 
+
 body {
+    display: flex;
+    flex-direction: column;
     scroll-behavior: smooth;
     background: _palette(bg);
     overflow-x: hidden;
@@ -46,3 +53,8 @@ body {
 
 }
 
+.content{
+    flex: 1 0 auto;
+    margin-top: 100px;
+}
+ 

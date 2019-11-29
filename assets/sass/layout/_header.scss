@@ -1,3 +1,8 @@
+.header-color{
+  background: linear-gradient(156deg, rgba(250,250,250,1) 0%, rgba(233,168,18,1) 0%, rgba(233,168,18,1) 19%, rgba(239,196,97,1) 85%, rgba(241,207,129,1) 100%, rgba(250,250,250,1) 100%);
+  border-bottom: 5px solid _palette(border);
+} 
+
 header {
     padding: 0 50px;
     // background: transparent;
@@ -28,6 +33,8 @@ header {
             top: 5px;
             margin-right: 0.5rem;
         }
+
+      
 
         a{
             border-bottom: none;
