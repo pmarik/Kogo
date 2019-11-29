@@ -1193,6 +1193,74 @@ header {
   .blog-overview a {
     margin-top: 25px; }
 
+.mission-article-container {
+  width: 100%;
+  min-height: 400px; }
+  .mission-article-container:first-of-type {
+    margin-top: 5%; }
+  .mission-article-container:last-of-type {
+    margin-bottom: 5%; }
+    .mission-article-container:last-of-type article {
+      float: right; }
+      @media screen and (max-width: 746px) {
+        .mission-article-container:last-of-type article {
+          float: none; } }
+  .mission-article-container article {
+    width: 50%;
+    min-width: 350px;
+    position: relative; }
+    .mission-article-container article h2, .mission-article-container article a {
+      margin: 25px 0px; }
+    @media screen and (max-width: 746px) {
+      .mission-article-container article {
+        margin: 0 auto; } }
+
+.item-wrapper {
+  margin-top: 5%;
+  width: 100%;
+  min-height: 400px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  padding-top: 40px; }
+  .item-wrapper .item-img {
+    width: 55%;
+    height: 300px;
+    min-width: 300px;
+    border: 2px solid black; }
+    .item-wrapper .item-img img {
+      height: 100%;
+      width: auto; }
+    @media screen and (max-width: 746px) {
+      .item-wrapper .item-img {
+        width: 100%; } }
+  .item-wrapper .item-description {
+    width: 35%;
+    min-width: 300px; }
+    @media screen and (max-width: 746px) {
+      .item-wrapper .item-description {
+        width: 100%; }
+        .item-wrapper .item-description h2 {
+          padding-top: 25px; } }
+    .item-wrapper .item-description a {
+      margin-top: 25px; }
+
+.item-additional-info {
+  width: 100%;
+  min-height: 400px;
+  padding: 50px;
+  text-align: center;
+  margin-bottom: 5%; }
+  .item-additional-info a {
+    margin-top: 25px; }
+
 footer {
   border-top: 5px solid #728C5B;
   display: -webkit-box;

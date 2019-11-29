@@ -1,0 +1,35 @@
+.mission-article-container{
+    width: 100%;
+    min-height: 400px;
+
+    &:first-of-type{
+        margin-top: 5%;
+    }
+
+    &:last-of-type{
+        margin-bottom: 5%;
+
+        article{
+            float: right;
+
+            @include breakpoint('<=small'){
+                float: none;
+            }
+        }
+    }
+
+    article{
+        width: 50%;
+        min-width: 350px;
+
+        position: relative;
+
+        h2, a{
+            margin: 25px 0px;
+        }
+
+        @include breakpoint("<=small"){
+            margin: 0 auto;
+        }
+    }
+}
